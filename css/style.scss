@@ -4,5 +4,170 @@
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(231, 68%, 32%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  width: 340px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .bgimage {
+    position: absolute;
+    top: 0;
+  }
+  .logoC {
+    width: 30%;
+    margin: 5em 0;
+  }
+}
+h1,
+h2,
+h3 {
+  color: $Dark-Grayish-Blue;
+}
+p {
+  color: $Grayish-Blue;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2em 0em;
+  gap: 1.5em;
+  button {
+    width: 65%;
+    padding: 1em 0em;
+    color: white;
+    border: none;
+    border-radius: 3em;
+    font-weight: bold;
+    background-color: $Light-Blue;
+
+    box-shadow: -6px 6px 10px -2px $Light-Blue;
+    &:hover {
+      opacity: 0.8;
+      font-size: 0.9em;
+      border: none;
+      width: 70%;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  :first-child {
+    background-color: $Strong-Cyan;
+    box-shadow: -6px 6px 10px -4px $Strong-Cyan;
+  }
+}
+.FirstSection,
+.secondSection,
+.ThirdSection {
+  margin: 8em 0em;
+  img {
+    width: 100%;
+    margin: 3em 0;
+  }
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  .details {
+    p {
+      margin-bottom: 2em;
+    }
+  }
+}
+.ThirdSection {
+  img {
+    width: 15%;
+  }
+}
+.ForthSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  img {
+    width: 50%;
+  }
+  margin-bottom: 8em;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8em;
+  $Grayish-Blue: rgb(240, 245, 248);
+  background-color:$Grayish-Blue;
+  padding:2em 0 ;
+  gap: 2.5em;
+  img {
+    width: 20%;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    :last-child {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: $Dark-Grayish-Blue;
+      &:hover {
+        transform: scale(1.2, 1.2);
+        color: $Strong-Cyan;
+        font-weight: bold;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+  .socialicons{
+      width: 100%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    i{
+        &:hover{
+            color: $Strong-Cyan;
+            cursor: pointer;
+        }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $Grayish-Blue;
+  font-size: 1.2em;
+}
+
+main {
+  width: 340px;
+}
+
+footer {
+  width: 340px;
 }
