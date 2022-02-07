@@ -31,10 +31,18 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header,
+main,
+footer {
+  width: 95%;
+  max-width: 380px;
 }
 
 header {
-  width: 340px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,8 +238,8 @@ footer .links :last-child {
 }
 
 footer .links :last-child:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   color: #26baa4;
   font-weight: bold;
   -webkit-transition: all 0.5s ease;
@@ -255,6 +263,11 @@ footer .socialicons {
 footer .socialicons i:hover {
   color: #26baa4;
   cursor: pointer;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #26baa4;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 a {
@@ -263,11 +276,11 @@ a {
   font-size: 1.2em;
 }
 
-main {
-  width: 340px;
-}
-
-footer {
-  width: 340px;
+@media only screen and (min-width: 768px) {
+  header,
+  main,
+  footer {
+    max-width: 1024px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
