@@ -65,9 +65,10 @@ p {
     box-shadow: -6px 6px 10px -2px $Light-Blue;
     &:hover {
       opacity: 0.8;
-      font-size: 0.9em;
+
+      transform: scale(1.1);
       border: none;
-      width: 70%;
+
       cursor: pointer;
       transition: all 0.5s ease-in-out;
     }
@@ -170,12 +171,4 @@ a {
   text-decoration: none;
   color: $Grayish-Blue;
   font-size: 1.2em;
-}
-
-@media only screen and (min-width: 768px) {
-  header,
-  main,
-  footer {
-    max-width: 1024px;
-  }
 }
