@@ -35,15 +35,21 @@ body {
   transition: all 0.5s ease;
 }
 
-header,
-main,
+main {
+  width: 80%;
+  max-width: 380px;
+}
+
 footer {
-  width: 95%;
+  width: 100%;
   max-width: 380px;
 }
 
 header {
   position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 0em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,11 +68,21 @@ header {
 header .bgimage {
   position: absolute;
   top: 0;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 380px;
+  background-size: cover;
 }
 
 header .logoC {
   width: 30%;
   margin: 5em 0;
+}
+
+header .title {
+  width: 80%;
+  max-width: 380px;
 }
 
 h1,
@@ -124,6 +140,15 @@ p {
   background-color: #26baa4;
   -webkit-box-shadow: -6px 6px 10px -4px #26baa4;
           box-shadow: -6px 6px 10px -4px #26baa4;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+header p {
+  margin-bottom: 1em;
 }
 
 .FirstSection,
@@ -274,5 +299,261 @@ a {
   text-decoration: none;
   color: #9fabb2;
   font-size: 1.2em;
+}
+
+@media only screen and (min-width: 720px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header,
+  footer {
+    width: 100%;
+    max-width: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    max-width: 90%;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2em 2em;
+    margin-top: 4em;
+  }
+  footer img {
+    width: 40px;
+  }
+  footer .links {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    text-align: start;
+    gap: 1.5em 1em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  footer .socialicons {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    gap: 1em;
+  }
+  footer .socialicons i {
+    font-size: 1.5em;
+  }
+  header .bgimage {
+    position: absolute;
+    top: 0;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 380px;
+  }
+  header .logoC {
+    width: 100px;
+  }
+  header p {
+    max-width: 500px;
+  }
+  header .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 400px;
+  }
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 400px;
+  }
+  .FirstSection {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 4em 0em;
+  }
+  .FirstSection p {
+    max-width: 500px;
+  }
+  .FirstSection .subsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .FirstSection .subsection img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+    width: 60%;
+  }
+  .FirstSection .subsection .details {
+    padding: 0em 1em;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0em 0em;
+  }
+  .secondSection p {
+    max-width: 500px;
+  }
+  .secondSection img {
+    max-width: 600px;
+  }
+  .ThirdSection {
+    margin: 4em 0;
+  }
+  .ThirdSection .explication {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0em 0em;
+  }
+  .ThirdSection .explication .image {
+    height: 80px;
+    padding-top: 1em;
+  }
+  .ThirdSection .explication img {
+    margin: 0em;
+  }
+  .ThirdSection .explication .card {
+    width: 80%;
+    padding: 0 1em;
+  }
+  .ThirdSection .explication .card p {
+    line-height: 1.5em;
+  }
+  .ForthSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    margin-bottom: 6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+  }
+  .ForthSection img {
+    width: 80px;
+  }
+  .FifthSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .FifthSection p {
+    max-width: 500px;
+    line-height: 1.5em;
+    margin-top: 1em;
+  }
+  p {
+    font-size: 1.2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
