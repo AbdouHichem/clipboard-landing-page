@@ -16,8 +16,8 @@ body {
   transition: all 0.5s ease;
 }
 
-main{
-width: 80%;
+main {
+  width: 80%;
   max-width: 380px;
 }
 footer {
@@ -198,14 +198,6 @@ a {
   font-size: 1.2em;
 }
 @media only screen and (min-width: 720px) {
-  body{
-    width: 100%;
-    max-width:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-  }
   header,
   footer {
     width: 100%;
@@ -219,11 +211,12 @@ a {
     align-items: center;
     width: 90%;
     max-width: 90%;
+    transition: all 0.5s ease;
   }
   footer {
     flex-direction: row;
-    padding: 2em 2em;
-    margin-top:4em;
+    padding: 2em 8em;
+    margin-top: 4em;
     img {
       width: 40px;
     }
@@ -237,9 +230,9 @@ a {
     }
     .socialicons {
       flex: 1;
-      justify-content:flex-end;
+      justify-content: flex-end;
       align-self: flex-end;
-      gap:1em;
+      gap: 1em;
 
       i {
         font-size: 1.5em;
@@ -256,13 +249,12 @@ a {
 
       width: 100%;
       height: 380px;
-      
     }
     .logoC {
       width: 100px;
     }
     p {
-      max-width: 500px;
+      max-width: 550px;
     }
     .row {
       flex-direction: row;
@@ -278,9 +270,9 @@ a {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin:4em 0em;
+    margin: 4em 0em;
     p {
-      max-width: 500px;
+      max-width: 550px;
     }
     .subsection {
       display: flex;
@@ -310,33 +302,32 @@ a {
     flex-direction: column;
     margin: 0em 0em;
     p {
-      max-width: 500px;
+      max-width: 550px;
     }
     img {
       max-width: 600px;
     }
   }
   .ThirdSection {
-    margin:4em 0 ;
+    margin: 4em 0;
     .explication {
       display: flex;
       justify-content: center;
       align-items: start;
       flex-direction: row;
       padding: 0em 0em;
-      .image{
-        height:80px;
+      .image {
+        height: 80px;
         padding-top: 1em;
       }
-      img{
+      img {
         margin: 0em;
       }
       .card {
         width: 80%;
-        padding:0 1em;
+        padding: 0 1em;
         p {
           line-height: 1.5em;
-          
         }
       }
     }
@@ -358,13 +349,50 @@ a {
     justify-content: center;
     align-items: center;
     p {
-      max-width: 500px;
+      max-width: 550px;
       line-height: 1.5em;
       margin-top: 1em;
     }
   }
-  p{
+  p {
     font-size: 1.2em;
-  } 
+  }
 }
+@media only screen and (min-width: 1020px) {
+  footer {
+    img {
+      width: 60px;
+    }
 
+    i {
+      font-size: 2em;
+    }
+  }
+
+  .FirstSection {
+    .subsection {
+      img {
+        flex: 1;
+
+        transform: translateX(-70px);
+        width: 60%;
+      }
+    }
+  }
+
+  .ThirdSection {
+    .explication {
+      .image {
+        height: 80px;
+      }
+      img {
+        width: 50px;
+      }
+    }
+  }
+  .ForthSection {
+    img {
+      width: 130px;
+    }
+  }
+}

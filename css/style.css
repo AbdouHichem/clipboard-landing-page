@@ -302,23 +302,6 @@ a {
 }
 
 @media only screen and (min-width: 720px) {
-  body {
-    width: 100%;
-    max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   header,
   footer {
     width: 100%;
@@ -342,13 +325,15 @@ a {
             align-items: center;
     width: 90%;
     max-width: 90%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 2em 2em;
+    padding: 2em 8em;
     margin-top: 4em;
   }
   footer img {
@@ -393,7 +378,7 @@ a {
     width: 100px;
   }
   header p {
-    max-width: 500px;
+    max-width: 550px;
   }
   header .row {
     -webkit-box-orient: horizontal;
@@ -426,7 +411,7 @@ a {
     margin: 4em 0em;
   }
   .FirstSection p {
-    max-width: 500px;
+    max-width: 550px;
   }
   .FirstSection .subsection {
     display: -webkit-box;
@@ -475,7 +460,7 @@ a {
     margin: 0em 0em;
   }
   .secondSection p {
-    max-width: 500px;
+    max-width: 550px;
   }
   .secondSection img {
     max-width: 600px;
@@ -548,12 +533,38 @@ a {
             align-items: center;
   }
   .FifthSection p {
-    max-width: 500px;
+    max-width: 550px;
     line-height: 1.5em;
     margin-top: 1em;
   }
   p {
     font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  footer img {
+    width: 60px;
+  }
+  footer i {
+    font-size: 2em;
+  }
+  .FirstSection .subsection img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+    width: 60%;
+  }
+  .ThirdSection .explication .image {
+    height: 80px;
+  }
+  .ThirdSection .explication img {
+    width: 50px;
+  }
+  .ForthSection img {
+    width: 130px;
   }
 }
 /*# sourceMappingURL=style.css.map */
