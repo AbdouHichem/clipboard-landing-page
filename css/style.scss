@@ -15,14 +15,20 @@ body {
   text-align: center;
   transition: all 0.5s ease;
 }
-header,
-main,
+
+main{
+width: 80%;
+  max-width: 380px;
+}
 footer {
-  width: 95%;
+  width: 100%;
   max-width: 380px;
 }
 header {
   position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 0em 1em;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -31,10 +37,20 @@ header {
   .bgimage {
     position: absolute;
     top: 0;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 380px;
+    background-size: cover;
   }
   .logoC {
     width: 30%;
     margin: 5em 0;
+  }
+  .title {
+    width: 80%;
+    max-width: 380px;
   }
 }
 h1,
@@ -76,6 +92,15 @@ p {
   :first-child {
     background-color: $Strong-Cyan;
     box-shadow: -6px 6px 10px -4px $Strong-Cyan;
+  }
+}
+header {
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+  p {
+    margin-bottom: 1em;
   }
 }
 .FirstSection,
@@ -172,3 +197,174 @@ a {
   color: $Grayish-Blue;
   font-size: 1.2em;
 }
+@media only screen and (min-width: 720px) {
+  body{
+    width: 100%;
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  header,
+  footer {
+    width: 100%;
+    max-width: 100%;
+    transition: all 0.5s ease;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 90%;
+  }
+  footer {
+    flex-direction: row;
+    padding: 2em 2em;
+    margin-top:4em;
+    img {
+      width: 40px;
+    }
+    .links {
+      flex: 3;
+      text-align: start;
+      gap: 1.5em 1em;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+    }
+    .socialicons {
+      flex: 1;
+      justify-content:flex-end;
+      align-self: flex-end;
+      gap:1em;
+
+      i {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  header {
+    .bgimage {
+      position: absolute;
+      top: 0;
+      background-image: url(../images/bg-header-desktop.png);
+      background-repeat: no-repeat;
+
+      width: 100%;
+      height: 380px;
+      
+    }
+    .logoC {
+      width: 100px;
+    }
+    p {
+      max-width: 500px;
+    }
+    .row {
+      flex-direction: row;
+      width: 400px;
+    }
+  }
+  .row {
+    flex-direction: row;
+    width: 400px;
+  }
+  .FirstSection {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin:4em 0em;
+    p {
+      max-width: 500px;
+    }
+    .subsection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        flex: 1;
+
+        transform: translateX(-60px);
+        width: 60%;
+      }
+      .details {
+        padding: 0em 1em;
+        text-align: start;
+        display: flex;
+
+        flex: 2;
+
+        flex-direction: column;
+      }
+    }
+  }
+  .secondSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0em 0em;
+    p {
+      max-width: 500px;
+    }
+    img {
+      max-width: 600px;
+    }
+  }
+  .ThirdSection {
+    margin:4em 0 ;
+    .explication {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: row;
+      padding: 0em 0em;
+      .image{
+        height:80px;
+        padding-top: 1em;
+      }
+      img{
+        margin: 0em;
+      }
+      .card {
+        width: 80%;
+        padding:0 1em;
+        p {
+          line-height: 1.5em;
+          
+        }
+      }
+    }
+  }
+  .ForthSection {
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+    img {
+      width: 80px;
+    }
+  }
+  .FifthSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      max-width: 500px;
+      line-height: 1.5em;
+      margin-top: 1em;
+    }
+  }
+  p{
+    font-size: 1.2em;
+  } 
+}
+
